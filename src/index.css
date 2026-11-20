@@ -1,0 +1,45 @@
+:root {
+    --sage: #e7e8d6;
+    --deep-olive: #5c6045;
+    --eucalyptus: #77795b;
+    --ivory: #f5f3e8;
+    --charcoal: #2f3228;
+    --soft-stone: #d8d9c6;
+    --warm-gray: #6b6d60;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+  
+  button { font-family: inherit; }
+  
+  h1, h2 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 500;
+  }
+  
+  .eyebrow {
+    margin: 0 0 12px;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+  }
+  
+  .page-title {
+    color: var(--deep-olive);
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 0 0 8px;
+  }
+  
+  .page-subtitle {
+    color: var(--warm-gray);
+    font-size: 18px;
+    margin: 0 0 40px;
+  }
