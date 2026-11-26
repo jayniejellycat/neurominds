@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Sidebar from './Components/Sidebar'
-import Header from './Components/Header'
-import Home from './pages/Home'
-import Solutions from './pages/Solutions'
-import SoundStudio from './pages/SoundStudio'
-import Relaxation from './pages/Relaxation'
-import Wellness from './pages/Wellness'
-import Science from './pages/Science'
+import Sidebar from './Sidebar'
+import Header from './Header'
+import Home from './Home'
+import Solutions from './Solutions'
+import SoundStudio from './SoundStudio'
+import Relaxation from './Relaxation'
+import Wellness from './Wellness'
+import Science from './Science'
 
 function App() {
   const [activePage, setActivePage] = useState('Home')
