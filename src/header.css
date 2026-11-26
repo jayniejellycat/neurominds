@@ -3,20 +3,20 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 28px 0;
+  padding: clamp(18px, 1.6vw, 44px) 0;
 }
 
-.header-search { position: relative; width: 320px; max-width: 100%; }
+.header-search { position: relative; width: clamp(260px, 22vw, 560px); max-width: 100%; }
 
 .header-search input {
   width: 100%;
-  padding: 15px 52px 15px 24px;
+  padding: clamp(11px, 0.9vw, 24px) clamp(46px, 3.4vw, 80px) clamp(11px, 0.9vw, 24px) clamp(20px, 1.5vw, 36px);
   border: none;
   border-radius: 999px;
   background: #fbfaf6;
   box-shadow: 0 2px 12px rgba(80, 92, 73, 0.1);
   font-family: inherit;
-  font-size: 16px;
+  font-size: clamp(14px, 1vw, 22px);
   color: var(--charcoal);
 }
 
@@ -28,8 +28,8 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
+  width: clamp(18px, 1.3vw, 32px);
+  height: clamp(18px, 1.3vw, 32px);
   color: var(--charcoal);
   pointer-events: none;
 }
@@ -44,31 +44,18 @@
   place-items: center;
   cursor: pointer;
 }
-.header-bell svg { width: 26px; height: 26px; }
+.header-bell svg { width: clamp(24px, 1.8vw, 44px); height: clamp(24px, 1.8vw, 44px); }
 
-.header-profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: none;
+.header-signup {
   border: none;
-  color: var(--charcoal);
-  font-family: 'Newsreader', Georgia, serif;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.header-chevron { width: 18px; height: 18px; }
-
-.header-avatar {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--eucalyptus);
+  border-radius: 999px;
+  background: var(--deep-olive);
   color: var(--ivory);
-  display: grid;
-  place-items: center;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-size: clamp(15px, 1vw, 22px);
+  padding: clamp(12px, 0.9vw, 24px) clamp(28px, 2vw, 52px);
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
+
+.header-signup:hover { background: var(--charcoal); }
+.header-signup:focus-visible { outline: 2px solid var(--eucalyptus); outline-offset: 3px; }

@@ -1,2 +1,6 @@
 .app-layout { display: flex; min-height: 100vh; }
-.app-main { flex: 1; min-width: 0; padding: 0 40px 40px; }
+.app-main { flex: 1; min-width: 0; padding: 0 clamp(28px, 2.6vw, 72px) clamp(28px, 2.6vw, 72px); }
+
+@media (max-width: 900px) {
+  .app-main { padding: 0 20px 20px; }
+}

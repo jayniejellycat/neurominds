@@ -17,13 +17,7 @@ function Header() {
             <path d="M18 8a6 6 0 0 0-12 0c0 7-3 8-3 8h18s-3-1-3-8zM10 20a2 2 0 0 0 4 0" />
           </svg>
         </button>
-        <button className="header-profile">
-          <span className="header-avatar">J</span>
-          <span>Jaynie</span>
-          <svg className="header-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </button>
+        <button className="header-signup">Sign Up</button>
       </div>
     </header>
   );

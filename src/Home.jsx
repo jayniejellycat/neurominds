@@ -1,9 +1,10 @@
 import './Home.css';
-import headphones from '../assets/headphones.png';
-import brain from '../assets/brain.png';
-import head from '../assets/head.png';
-import mountains from '../assets/mountains.png';
-import soundwaves from '../assets/soundwaves.png';
+import About from './About';
+import headphones from './headphones.png';
+import brain from './brain.png';
+import head from './head.png';
+import mountains from './mountains.png';
+import soundstudio from './soundstudio.png';
 
 const bars = [14, 26, 40, 58, 34, 70, 48, 82, 56, 90, 62, 76, 44, 64, 30, 50, 22, 36, 16];
 
@@ -11,8 +12,8 @@ const cards = [
   {
     page: 'Sound Studio',
     text: 'Try binaural beats, Solfeggio frequencies, and ambient sound mixers.',
-    art: soundwaves,
-    artClass: 'art-soundwaves',
+    art: soundstudio,
+    artClass: 'art-soundstudio',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
         <path d="M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4" />
@@ -109,6 +110,8 @@ function Home({ onNavigate }) {
           </article>
         ))}
       </div>
+
+      <About />
     </div>
   );
 }

@@ -21,6 +21,7 @@ function Sidebar({ activePage, onNavigate }) {
           <path d="M24 36C14 36 7 30 5 20 14 20 21 26 24 36Z" />
           <path d="M24 36C34 36 41 30 43 20 34 20 27 26 24 36Z" />
         </svg>
+        <span className="sidebar-name">Neuromind</span>
       </div>
 
       {items.map((item) => (
